@@ -14,3 +14,22 @@
 .margin-top-80 {
   margin-top: 80px;
 }
+
+body { 
+  margin: 20px; 
+  text-align: left; 
+} 
+
+h1 { 
+  color: teal; 
+} 
+
+img { 
+  float: left;  
+  margin: 5px; 
+} 
+
+p { 
+  text-align: left; 
+  font-size: 14px; 
+} 
