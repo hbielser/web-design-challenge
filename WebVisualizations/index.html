@@ -8,24 +8,47 @@
 
   <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link rel="stylesheet" href="style.css">
   
 </head>
 
-<body class = "container">
-  <h1 id = "header">Summary: Latitude vs X</h1>
-  <hr>
-  <img src="Lat.MaxTemp.png" width = "200" alt="Latitude vs Max Temperature">
-  <p>
-    The purpose of this project was to analyze how weather changes as you get closer to the equator.
-    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
-    dataset on over 500 cities. 
-    <br></br>
-    After assembling the dataset, used Matplotlib to plot various aspects of the weather vs. latitude. 
-    Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the 
-    source data and visualizations created as part of the analysis, as well as explanations and descriptions 
-    of any trends and correlations witness.
-  </p>
-</body>
+<body>
+
+  <!-- Create grid -->
+  <div class = "container">
+
+    <!-- Row 1 (Header) -->
+    <div class = "row">
+        <div class = "col-md-12">
+          <h1 id = "header">Summary: Latitude vs X</h1>
+          <hr>
+        </div>
+      </div>
+
+    <!-- Row 2 -->
+    <div class = "row">
+      <div class = "col-md-6">
+        <img src="Lat.MaxTemp.png" width = "300" alt="Latitude vs Max Temperature">
+        <p>
+          The purpose of this project was to analyze how weather changes as you get closer to the equator.
+          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
+          dataset on over 500 cities. 
+          <br></br>
+          After assembling the dataset, used Matplotlib to plot various aspects of the weather vs. latitude. 
+          Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the 
+          source data and visualizations created as part of the analysis, as well as explanations and descriptions 
+          of any trends and correlations witness.
+        </p>
+      </div>
+      <!-- Buffer column-->
+      <div class = "col-md-1">
+      </div>
+      <div class = "col-md-5">
+        <h2 id = "header">Visualizations</h2>
+        <img src="Lat.MaxTemp.png" width = "200" alt="Latitude vs Max Temperature">
+        <img src="Lat.Cloud.png" width = "200" alt="Latitude vs Cloudiness">
+        <img src="Lat.Humid.png" width = "200" alt="Latitude vs Humidity">
+      </div>
+    </div>
+  </body>
 </html>
