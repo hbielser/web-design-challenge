@@ -14,32 +14,42 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Start of navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Plots</a>
-            <a class="dropdown-item" href="#">Comparison</a>
-            <a class="dropdown-item" href="#">Data</a>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="#" id="logo">Latitude</a>
           </div>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
-        </li>
-      </ul>
-    </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="max_temp.html">Max Temperature</a></li>
+                <li><a href="visualizations/humidity.html">Humidity</a></li>
+                <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                <li><a href="visualizations/wind.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </div><!-- /.container-fluid -->
   </nav>
 
   <!-- Create grid -->
@@ -47,23 +57,23 @@
       <!-- Row 1 (Header) -->
       <div class = "row">
           <div class = "col-md-6">
-            <h1 id = "header">Summary: Latitude vs X</h1>
+            <h1 id = "header">Max Temperature</h1>
             <hr>
           </div>
 
       <!-- Row 2 -->
       <div class = "row">
         <div class = "col-md-6">
-          <img src="Lat.MaxTemp.png" width = "300" alt="Latitude vs Max Temperature">
-          <p>
-            The purpose of this project was to analyze how weather changes as you get closer to the equator.
-            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
-            dataset on over 500 cities. 
-            <br></br>
-            After assembling the dataset, used Matplotlib to plot various aspects of the weather vs. latitude. 
-            Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the 
-            source data and visualizations created as part of the analysis, as well as explanations and descriptions 
-            of any trends and correlations witness.
+          <img src="Resources/assets/images/Lat.MaxTemp.png" width = "300" alt="Latitude vs Max Temperature">
+        </div>
+
+      <!-- Row 3 -->
+      <div class = "row">
+        <div clas = "col-md-6">
+           <p>
+            As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+            More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year
+            than the northern hemisphere. This may be due to the tilt of the earth at the time of the year the data was gathered.
           </p>
         </div>
       </div>
@@ -74,13 +84,22 @@
       <div class = "col-md-5">
         <h2 id = "header">Visualizations</h2>
           <div class = "thumbnail">
-            <img src="Lat.MaxTemp.png" width = "200" alt="Latitude vs Max Temperature" class = "img-thumbnail">
-            <img src="Lat.Cloud.png" width = "200" alt="Latitude vs Cloudiness" class = "img-thumbnail">
-            <img src="Lat.Wind.png" width = "200" alt="Latitude vs Wind Speed" class = "img-thumbnail">
-            <img src="Lat.Humid.png" width = "200" alt="Latitude vs Humidity" class = "img-thumbnail">
+            <a href = "max_temp.html">
+              <img src="Resources/assets/images/Lat.MaxTemp.png" width = "200" alt="Latitude vs Max Temperature" class = "img-thumbnail">
+            </a>
+            <a href = "#">
+              <img src="Resources/assets/images/Lat.Cloud.png" width = "200" alt="Latitude vs Cloudiness" class = "img-thumbnail">
+            </a>
+              <img src="Resources/assets/images/Lat.Wind.png" width = "200" alt="Latitude vs Wind Speed" class = "img-thumbnail">
+            <img src="Resources/assets/images/Lat.Humid.png" width = "200" alt="Latitude vs Humidity" class = "img-thumbnail">
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
