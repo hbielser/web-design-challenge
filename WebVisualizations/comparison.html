@@ -14,42 +14,32 @@
 
 <body>
 
-  <!-- Start of navbar -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="row">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="col-xs-9 phone-nav">
-            <a class="navbar-brand" href="#" id="logo">Latitude</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
           </div>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right navbar-right-custom">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              <li><a href="max_temp.html">Max Temperature</a></li>
-                <li><a href="visualizations/humidity.html">Humidity</a></li>
-                <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
-                <li><a href="visualizations/wind.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li><a href="comparison.html">Comparison</a></li>
-            <li><a href="data.html">Data</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-    </div><!-- /.container-fluid -->
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Create grid -->
@@ -84,12 +74,20 @@
       <div class = "col-md-5">
         <h2 id = "header">Visualizations</h2>
           <div class = "thumbnail">
-            <img src="Resources/assets/images/Lat.MaxTemp.png" width = "200" alt="Latitude vs Max Temperature" class = "img-thumbnail">
-            <img src="Resources/assets/images/Lat.Cloud.png" width = "200" alt="Latitude vs Cloudiness" class = "img-thumbnail">
-            <img src="Resources/assets/images/Lat.Wind.png" width = "200" alt="Latitude vs Wind Speed" class = "img-thumbnail">
-            <img src="Resources/assets/images/Lat.Humid.png" width = "200" alt="Latitude vs Humidity" class = "img-thumbnail">
+            <a href = "max_temp.html">
+              <img class = "panel" src="Resources/assets/images/Lat.MaxTemp.png" width = "200" alt="Latitude vs Max Temperature" class = "img-thumbnail">
+            </a>
+            <a href = "cloudiness.html">
+              <img class = "panel" src="Resources/assets/images/Lat.Cloud.png" width = "200" alt="Latitude vs Cloudiness" class = "img-thumbnail">
+            </a>
+            <a href = "wind.html">
+              <img class = "panel" src="Resources/assets/images/Lat.Wind.png" width = "200" alt="Latitude vs Wind Speed" class = "img-thumbnail">
+            </a>
+            <a href = "humidity.html">
+              <img class = "panel" src="Resources/assets/images/Lat.Humid.png" width = "200" alt="Latitude vs Humidity" class = "img-thumbnail">
+            </a>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </body>

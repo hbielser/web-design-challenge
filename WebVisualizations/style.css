@@ -1,24 +1,27 @@
 
 #header {
-    color: teal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-.box {
-  height: 400px;
-  padding: 20px;
-  color: #fff;
-  background: deepskyblue;
+  color: teal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
-.margin-top-80 {
-  margin-top: 80px;
+.box {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-right: 5px;
+  padding: 10px 20px 15px;
+  background-color: white;
 }
 
 body { 
   margin: 20px; 
   text-align: left; 
+  background-color: lightgray;
 } 
+
+.navbar-brand {
+  background-color: teal;
+}
 
 h1 { 
   color: teal; 
@@ -27,9 +30,21 @@ h1 {
 img { 
   float: left;  
   margin: 5px; 
+  width: 200px;
 } 
 
 p { 
   text-align: left; 
   font-size: 14px; 
 } 
+
+.panel:hover {
+  border-color: teal;
+  border-style: solid;
+}
+
+.wrapper {
+  align-self: start;
+  column-gap: 20px;
+  padding: 20px;
+}
