@@ -20,7 +20,9 @@
   <body >
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class = "navbar-brand" href = "index.html" id = "navfont"> Latitude</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -52,44 +54,45 @@
       <div class = "box">
         <div class = "row">
           <div class = "col-lg-6 col-sm-12">
-            <h1 id = "header">Summary: Latitude vs Humidity</h1>
+            <h1 id = "header">Humidity</h1>
             <hr>
             <div class = "wrapper">
-              <img src="Resources/assets/images/Lat.Humid.png" width = "300" alt="Latitude vs Humidity">
+              <img src="Resources/assets/images/Lat.Humid.png" width = "300" float: left alt="Latitude vs Max Temperature">
               <p>
-                Text here 
-                <br></br>
-                Text here
+                As expected, humidity plays a large role in the weather...
               </p>
             </div>
           </div>
 
         <!-- Visualization -->
         <div class = "col-lg-6 col-sm-12">
-          <h2 id = "header">Visualizations</h2>
-          <hr>
-        <div class = "row" style = "padding-bottom: 30 px">
-          <div class = "col-lg-6 col-sm-3">
-            <a href = "max_temp.html">
-              <img class = "panel" src="Resources/assets/images/Lat.MaxTemp.png" alt="Latitude vs Max Temperature" class = "img-thumbnail">
-            </a>
-          </div>
-          <div class = "col-lg-6 col-sm-3">
-            <a href = "cloudiness.html">
-              <img class = "panel" src="Resources/assets/images/Lat.Cloud.png" alt="Latitude vs Cloudiness" class = "img-thumbnail">
-            </a>
-          </div>
-        </div>
-        <div class = "row" style = "padding-bottom:30px">
-          <div class = "col-lg-6 col-sm-3">
-            <a href = "wind.html">
-              <img class = "panel" src="Resources/assets/images/Lat.Wind.png" alt="Latitude vs Wind Speed" class = "img-thumbnail">
-            </a>
-          </div>
-          <div class = "col-lg-6 col-sm-3">
-            <a href = "humidity.html">
-              <img class = "panel" src="Resources/assets/images/Lat.Humid.png" alt="Latitude vs Humidity" class = "img-thumbnail">
-            </a>
+          <div class = "container">
+            <h2 id = "header">Visualizations</h2>
+            <hr>
+            <div class = "row" style = "padding-bottom: 30 px">
+              <div class = "col">
+                <a href = "max_temp.html">
+                  <img class = "panel thumbnail" src="Resources/assets/images/Lat.MaxTemp.png" alt="Latitude vs Max Temperature">
+                </a>
+              </div>
+              <div class = "col">
+                <a href = "cloudiness.html">
+                  <img class = "panel thumbnail" src="Resources/assets/images/Lat.Cloud.png" alt="Latitude vs Cloudiness">
+                </a>
+              </div>
+            </div>
+            <div class = "row" style = "padding-bottom:30px">
+              <div class = "col">
+                <a href = "wind.html">
+                  <img class = "panel thumbnail" src="Resources/assets/images/Lat.Wind.png" alt="Latitude vs Wind Speed">
+                </a>
+              </div>
+              <div class = "col">
+                <a href = "humidity.html">
+                  <img class = "panel thumbnail" src="Resources/assets/images/Lat.Humid.png" alt="Latitude vs Humidity">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

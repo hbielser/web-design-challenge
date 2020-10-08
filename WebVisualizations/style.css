@@ -5,6 +5,26 @@
   font-weight: bold;
 }
 
+#subheader {
+  color: teal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
+}
+
+#navfont {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  #navfont {
+    width: 100%;
+  }
+}
+
 .box {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -21,14 +41,10 @@ body {
 
 .navbar-brand {
   background-color: teal;
+  padding: 5px 5px 5px;
 }
 
-h1 { 
-  color: teal; 
-} 
-
-img { 
-  float: left;  
+.thumbnail {
   margin: 5px; 
   width: 200px;
 } 
