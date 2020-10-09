@@ -20,16 +20,18 @@
   <body >
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class = "navbar-brand" href = "index.html" id = "navfont"> Latitude</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
+      <a class="navbar-brand" href="index.html" id="navfont"> Latitude</a>
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,10 +58,12 @@
           <div class = "col-lg-6 col-sm-12">
             <h1 id = "header">Cloudiness</h1>
             <hr>
-            <div class = "wrapper">
-              <img src="Resources/assets/images/Lat.Cloud.png" width = "300" float: left alt="Latitude vs Max Temperature">
+            <div>
+              <img class = "col" src="Resources/assets/images/Lat.Cloud.png" alt="Latitude vs Cloudiness">
               <p>
-                As expected, cloudiness plays a large role in the weather...
+                There is no clear relationship between cloudiness and a city's latitude. However, the chart demonstrates that 
+                at the time the data was captured, cities tended to have either very high or verylow cloudiness percentages. 
+                There were far fewer cities that reported cloudiness percentages between 20% and 60%.
               </p>
             </div>
           </div>

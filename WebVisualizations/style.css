@@ -60,7 +60,12 @@ p {
 }
 
 .wrapper {
-  align-self: start;
+  align-self: auto;
   column-gap: 20px;
   padding: 20px;
+}
+
+.Visualization {
+  width: 50%;
+  height: 50%;
 }
